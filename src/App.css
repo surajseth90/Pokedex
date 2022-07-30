@@ -3,6 +3,7 @@
   padding: 0;
   width: 100vw;
   height: 100vh;
+  position: relative;
 }
 
 .pokeman-view-container {
@@ -21,9 +22,10 @@
   padding: 0px;
   margin: 25px;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   flex-direction: column;
+  position: relative;
 }
 
 .pokeman-img {
@@ -35,7 +37,16 @@
   font-size: 20px;
 }
 
-.btn-container{
+.pokeman-card-btn {
+  width: 100%;
+  position: absolute;
+  height: 20px;
+  font-size: 10px;
+  cursor: pointer;
+  bottom: 0;
+}
+
+.btn-container {
   width: 90%;
   display: flex;
   justify-content: space-around;
@@ -49,6 +60,69 @@
   cursor: pointer;
 }
 
-.btn:hover{
+.btn:hover {
   background-color: antiquewhite;
+}
+
+.popup {
+  width: 70%;
+  height: 70%;
+  position: absolute;
+  border-radius: 20px;
+  box-shadow: inset;
+  top: 94px;
+  left: 150px;
+  background-color: antiquewhite;
+  box-shadow: 0 0 0 53px white, 0 0 0 42px black;
+}
+
+.current-pokeman-img {
+  width: 130px;
+  height: 165px;
+  position: absolute;
+  left: 30px;
+  top: 116px;
+}
+
+.current-pokeman-name {
+  font-size: 32px;
+  text-align: center;
+  margin-top: 20px;
+  color: brown;
+}
+
+.stat-data {
+  width: 440px;
+  height: 278px;
+  position: absolute;
+  top: 80px;
+  right: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  overflow-y: scroll;
+}
+.stat-data-card {
+  display: flex;
+  width: 100%;
+  height: 40px;
+}
+.state-data-container {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+  height: 100%;
+}
+.popup-close-btn {
+  width: 100px;
+  height: 36px;
+  font-size: 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  position: absolute;
+  bottom: 12px;
+  right: 20px;
 }
