@@ -101,7 +101,7 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  overflow-y: scroll;
+  overflow-y: auto;
 }
 .stat-data-card {
   display: flex;
