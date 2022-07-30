@@ -5,6 +5,7 @@ function App() {
   const [pokemonData, setPokemonData] = useState(null);
   const [totalPokemon, setTotalPokemon] = useState(0);
 
+  console.log("pokemonData", pokemonData);
   useEffect(() => {
     if (totalPokemon >= 0)
       fetch(
