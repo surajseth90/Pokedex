@@ -70,7 +70,7 @@ function App() {
             {selectedPokemonData?.stats.map(
               ({ base_stat, effort, stat }, id) => (
                 <div className="stat-data-card">
-                  <div className="state-data-container-name">
+                  <div className="state-data-container">
                     <p>Name: </p>
                     <p> &nbsp;{stat.name}</p>
                   </div>
